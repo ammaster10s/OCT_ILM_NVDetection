@@ -199,7 +199,7 @@ test_filenames = [
 
 
 
-eval_filenamesBoom = [
+Ground_Truth_ILM_BOOM= [
     'dr_test_1190_NV.png', 'img_02.png', 'img_04.png',
     'img_05.png', 'img_06.png', 'img_07.png',
     'img_08.png', 'img_09 (1).PNG', 'img_10.png',
@@ -209,7 +209,7 @@ eval_filenamesBoom = [
     'img_25.png'
 ]
 
-eval_filenamesMighty = [
+Ground_Truth_ILM_MIGHTY = [
     'dr_test_1190_NV_ILM.png', 'img_02_ILM.png', 'img_04_ILM.png',
     'img_05_ILM.png', 'img_06_ILM.png', 'img_07_ILM.png',
     'img_08_ILM.png', 'img_09_ILM.png', 'img_10_ILM.png',
@@ -219,8 +219,8 @@ eval_filenamesMighty = [
     'img_25_ILM.png'
 ]
 
-test_image_paths = concatenate_paths(test_base_path, test_filenames)
-eval_image_paths1 = concatenate_paths(eval_base_path1, eval_filenamesBoom)
+test_image_paths = concatenate_paths(test_base_path, Ground_Truth_ILM_MIGHTY)
+eval_image_paths1 = concatenate_paths(eval_base_path1, Ground_Truth_ILM_BOOM)
 # eval_image_paths2 = concatenate_paths(eval_base_path2, eval_filenamesMighty)
 
 # Combine and process both test and evaluation image paths
