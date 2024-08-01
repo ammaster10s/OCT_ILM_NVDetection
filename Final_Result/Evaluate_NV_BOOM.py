@@ -417,19 +417,24 @@ def process_and_visualize_images(image_paths, gt_image_paths):
         total_f1_score += f1_score
 
         # Visualize the results
-        # plt.figure(figsize=(40, 10))
-        # plt.subplot(1, 10, 1)
-        # plt.imshow(original_with_pattern_circles, cmap='gray')
-        # plt.title('Result using Vertical Gaps indicator \n + Outlier spot detection')
+        plt.figure(figsize=(40, 10))
+        plt.subplot(1, 10, 1)
+        plt.imshow(original_with_pattern_circles, cmap='gray')
+        plt.title('Result using Vertical Gaps indicator \n + Outlier spot detection')
 
-        # plt.subplot(1, 10, 2)
-        # plt.imshow(original_with_dots, cmap='gray')
-        # plt.title('ILM layer detection')
+        plt.subplot(1, 10, 2)
+        plt.imshow(original_with_dots, cmap='gray')
+        plt.title('ILM layer detection')
 
-        # plt.subplot(1, 10, 3)
-        # plt.imshow(binary_detected_image, cmap='gray')
-        # plt.title('Detected Patterns of NVs')
-        # plt.show()
+        plt.subplot(1, 10, 3)
+        plt.imshow(binary_detected_image, cmap='gray')
+        plt.title('Detected Patterns of NVs')
+
+        plt.subplot(1, 10, 4)
+        plt.imshow(gt_mask, cmap='gray')
+        plt.title('Ground Truth Mask')
+        
+        plt.show()
         
     num_images = len(image_paths)
 
